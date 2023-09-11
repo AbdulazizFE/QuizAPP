@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  text-align: initial;
+}
+.options label {
+  cursor: pointer;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style-type: none;
+  padding: 7px;
+}
+
+.options li{
+    padding-bottom: 5px;
+}
+.option {
+  margin: 10px 0;
+}
+.option label {
+  cursor: pointer;
+}
+.result {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.ulanswer {
+  list-style: none;
+}
+
+.question {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  width: 95%;
+}
+
+.userAnswer {
+  padding-bottom: 5px;
+  color: blue;
+}
+.correctAnswer {
+  padding-bottom: 5px;
+  color: green;
+}
+
+.incorrectAnswer {
+  color: red;
+}
