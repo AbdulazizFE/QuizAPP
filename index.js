@@ -34,7 +34,7 @@ const questions = [
       "c) Activate failover by updating the website's configuration",
       "d) Failover is enabled by default in DXP",
     ],
-    answer: "a) There are no failover options in DXP",
+    answer: "c) Activate failover by updating the website's configuration",
   },
 
   {
