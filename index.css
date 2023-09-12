@@ -4,6 +4,16 @@ body {
  
 }
 
+.container-fluid {
+  align-items: baseline !important;
+}
+
+.container-fluid h2{
+  font-size: 1.3rem;
+  color: orange;
+  font-weight: bold;
+}
+
 ul {
   text-align: initial;
 }
@@ -37,6 +47,14 @@ ul {
 .result {
   font-size: 20px;
   margin-top: 20px;
+}
+
+.result p{
+  color: orange;
+  font-weight: bolder;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+
 }
 
 .ulanswer {

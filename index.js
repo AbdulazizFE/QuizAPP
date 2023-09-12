@@ -14,6 +14,7 @@ const questions = [
     options: ["a) 1", "b) 2", "c) 3", "d) 4"],
     answer: "c) 3",
   },
+  /*
   {
     question: "What is the function of Cloudflare Caching in DXP?",
     options: [
@@ -861,6 +862,7 @@ const questions = [
     ],
     answer: "b. Analytics tools provide data on visitor group performance",
   },
+  */
 ];
 
 let currentQuestion = 0;
@@ -887,15 +889,13 @@ function loadQuestion(index) {
 }
 
 function checkAnswer() {
-  const selectedOptionIndex = parseInt(
-    document.querySelector('input[name="answer"]:checked').value
-  );
-
-  if (selectedOptionIndex == null) {
+  const selectedOption = document.querySelector('input[name="answer"]:checked');
+  if (selectedOption == null) {
     alert("Please select an answer.");
     return;
   }
 
+  const selectedOptionIndex = parseInt(selectedOption.value);
   const userAnswer = questions[currentQuestion].options[selectedOptionIndex];
   const correctAnswer = questions[currentQuestion].answer;
 
@@ -909,10 +909,13 @@ function checkAnswer() {
     loadQuestion(currentQuestion);
   } else {
     displayResult();
+
+    const questionCard = document.getElementById("questionCard");
+    questionCard.remove();
   }
 }
-
 function displayResult() {
+
   const resultElement = document.getElementById("result");
   resultElement.innerHTML = ""; // Clear any previous content
   const scoreResult = document.createElement("p");
@@ -927,33 +930,28 @@ function displayResult() {
     const selectedOptionIndex = parseInt(selectedOptionInput.value);
     const userAnswer = question.options[selectedOptionIndex];
     const correctAnswer = question.answer;
-    const isCorrect = userAnswer === correctAnswer;
 
+
+    const isCorrect = userAnswer === correctAnswer;
     questionResult.className = "row row-cols-1 row-cols-md-1 g-4";
     questionResult.innerHTML = `
-
-    
     <div class="col mb-2">
     <div class="card">
     <ul class="ulanswer">
-        
     <li class="question ">Question ${index + 1}: ${question.question}</li>
-
     <li class="userAnswer">Your Answer: ${userAnswer}</li>
     <li class="correctAnswer">Correct Answer: ${correctAnswer}</li>
-    <li class="${isCorrect ? "correctAnswer" : "incorrectAnswer"}" >Result: ${
-      isCorrect ? "Correct" : "Incorrect"
-    }</li>
+    <li class="${isCorrect ? "correctAnswer" : "incorrectAnswer"}">
+    Result: ${isCorrect ? "Correct" : "Incorrect"}
+    </li>
     </ul>
     </div>
-    
     </div>
- 
-
     `;
     resultElement.appendChild(questionResult);
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   loadQuestion(currentQuestion);

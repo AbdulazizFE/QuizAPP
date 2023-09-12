@@ -18,17 +18,31 @@
     <title>Quiz App</title>
   </head>
   <body class="bg-dark">
-    <div class="container" id="">
-      <h1 class="text-light mb-5">Optimizely certification</h1>
-      <div class="question text-light" id="question"></div>
-      <div class="card">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-2 rounded-1 ">
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="/">Home</a>
+              
+            <h2>Quizapp</h2>
+
+          </div>
+        </nav>
+     
+      <div id="questionCard">
+        <h1 class="text-light mb-5 mt-3">Optimizely certification</h1>
+        <div class="question text-light" id="question"></div>
+        <div class="card">
         <ul class="options" id="options"></ul>
+        </div>
+        <button id="start-button" class="btn btn-outline-success mt-2">
+       Next
+      </button>
       </div>
 
-      <button id="start-button" class="btn btn-outline-success mt-2">
-        Submit
-      </button>
-      <div class="result" id="result"></div>
+      <div class="result" id="result">
+      
+      </div>
     </div>
   </body>
   <script src="index.js"></script>
