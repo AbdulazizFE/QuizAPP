@@ -1,5 +1,7 @@
 body {
+ 
   font-family: Arial, sans-serif;
+ 
 }
 
 ul {
@@ -23,8 +25,8 @@ ul {
   padding: 7px;
 }
 
-.options li{
-    padding-bottom: 5px;
+.options li {
+  padding-bottom: 5px;
 }
 .option {
   margin: 10px 0;

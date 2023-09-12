@@ -1,10 +1,5 @@
 const questions = [
   {
-    question: "How many default environments are there in DXP?",
-    options: ["a) 1", "b) 2", "c) 3", "d) 4"],
-    answer: "c) 3",
-  },
-  {
     question: "What is the purpose of DXP?",
     options: [
       "a) Create digital experiences",
@@ -13,6 +8,11 @@ const questions = [
       "d) Integrate with external databases",
     ],
     answer: "a) Create digital experiences",
+  },
+  {
+    question: "How many default environments are there in DXP?",
+    options: ["a) 1", "b) 2", "c) 3", "d) 4"],
+    answer: "c) 3",
   },
   {
     question: "What is the function of Cloudflare Caching in DXP?",
@@ -224,34 +224,9 @@ const questions = [
       "c) Dynamic XML Processor",
       "d) Database Extension Protocol",
     ],
-    answer: "b) Digital Experience Platform",
-  },
-
-  {
-    question: "What does DXP stand for?",
-    options: [
-      "a) Data Exchange Platform",
-      "b) Digital Experience Platform",
-      "c) Dynamic XML Processor",
-      "d) Database Extension Protocol",
-    ],
-    answer: "b) Digital Experience Platform",
-  },
-  {
-    question: "What does DXP stand for?",
-    options: [
-      "a) Data Exchange Platform",
-      "b) Digital Experience Platform",
-      "c) Dynamic XML Processor",
-      "d) Database Extension Protocol",
-    ],
     answer: "b) Digital Experience Platform.",
   },
-  {
-    question: "How many default Azure environments are included in DXP?",
-    options: ["a) 1", "b) 2", "c) 3", "d) 4"],
-    answer: "c) 3",
-  },
+
   {
     question:
       "In DXP, what is the primary responsibility of a developer regarding infrastructure?",
@@ -468,7 +443,424 @@ const questions = [
     ],
     answer: "a) Content management, A/B testing, and sitemap generation",
   },
-
+  {
+    question:
+      "What does the EpiCloud PowerShell module offer to simplify the usage of the Deployment API?",
+    options: [
+      "a) A graphical interface",
+      "b) Code package deployment",
+      "c) Cmdlets for managing modules and scripts",
+      "d) Credentials for cmdlets",
+    ],
+    answer: "c) Cmdlets for managing modules and scripts",
+  },
+  {
+    question: "What is the purpose of the Connect-EpiCloud cmdlet?",
+    options: [
+      "a) Starts a new deployment",
+      "b) Fetches information about deployments",
+      "c) Supplies the required credentials to other cmdlets",
+      "d) Completes a deployment in the verification stage",
+    ],
+    answer: "c) Supplies the required credentials to other cmdlets",
+  },
+  {
+    question:
+      "Which PowerShell module is required to run the Add-EpiDeploymentPackage cmdlet?",
+    options: [
+      "a) Azure.Storage",
+      "b) Az.Storage",
+      "c) EpiCloud",
+      "d) Deployment API",
+    ],
+    answer: "a) Azure.Storage",
+  },
+  {
+    question: "How can you upload a code package to your DXP project?",
+    options: [
+      "a) Use Start-EpiDatabaseExport",
+      "b) Use Get-EpiDeploymentPackageLocation to get the SAS link",
+      "c) Use Import-Module EpiCloud",
+      "d) Use Connect-EpiCloud with ClientKey, ClientSecret, and ProjectId.",
+    ],
+    answer: "b) Use Get-EpiDeploymentPackageLocation to get the SAS link",
+  },
+  {
+    question:
+      "To deploy a code package to the Preproduction environment, which cmdlet should you use?",
+    options: [
+      "a) Start-EpiDatabaseExport",
+      "b) Start-EpiDeployment with -TargetEnvironment Preproduction",
+      "c) Get-EpiDeployment",
+      "d) Complete-EpiDeployment",
+    ],
+    answer: "b) Start-EpiDeployment with -TargetEnvironment Preproduction",
+  },
+  {
+    question: "What is the purpose of Start-EpiDeployment -DirectDeploy?",
+    options: [
+      "a) It deploys code packages to the Integration environment",
+      "b) It performs a swap during deployment",
+      "c) It speeds up deployments by deploying directly to the target Web App",
+      "d) It starts a database export",
+    ],
+    answer:
+      "c) It speeds up deployments by deploying directly to the target Web App",
+  },
+  {
+    question:
+      "When using Start-EpiDeployment to deploy code from a source environment, what does -SourceApp specify?",
+    options: [
+      "a) The source environment",
+      "b) The target environment",
+      "c) The app type names CMS and Commerce",
+      "d) The package to deploy",
+    ],
+    answer: "a) The source environment",
+  },
+  {
+    question: "What is the purpose of Start-EpiDeployment -ZeroDowntimeMode?",
+    options: [
+      "a) To enable a maintenance page",
+      "b) To specify the wait parameter",
+      "c) To perform a swap",
+      "d) To enable Zero Downtime Deployment",
+    ],
+    answer: "d) To enable Zero Downtime Deployment",
+  },
+  {
+    question:
+      "What command should you use to check the status of a specific deployment?",
+    options: [
+      "a) Get-EpiDeployment -Id <DeploymentId>",
+      "b) Start-EpiDeployment -Id <DeploymentId>",
+      "c) Complete-EpiDeployment -Id <DeploymentId>",
+      "d) Reset-EpiDeployment -Id <DeploymentId>",
+    ],
+    answer: "a) Get-EpiDeployment -Id <DeploymentId>",
+  },
+  {
+    question:
+      "Which cmdlet should you use to complete a deployment that is in the verification stage?",
+    options: [
+      "a) Start-EpiDeployment",
+      "b) Complete-EpiDeployment",
+      "c) Reset-EpiDeployment",
+      "d) Get-EpiDeployment",
+    ],
+    answer: "b) Complete-EpiDeployment",
+  },
+  {
+    question:
+      "What option can be used when resetting a deployment that used the UseMaintenancePage parameter?",
+    options: [
+      "a) RollbackDatabase",
+      "b) ValidateBeforeSwap",
+      "c) Complete",
+      "d) Wait",
+    ],
+    answer: "b) ValidateBeforeSwap",
+  },
+  {
+    question: "Which cmdlets in the module also support pipelining?",
+    options: [
+      "a) Start-EpiDatabaseExport and Get-EpiDeployment",
+      "b) Complete-EpiDeployment and Reset-EpiDeployment",
+      "c) Connect-EpiCloud and Import-Module EpiCloud",
+      "d) Get-EpiDeployment and Complete-EpiDeployment",
+    ],
+    answer: "d) Get-EpiDeployment and Complete-EpiDeployment",
+  },
+  {
+    question:
+      "What command should you run to install the EpiCloud module from the PowerShell Gallery?",
+    options: [
+      "a) Import-Module -Name EpiCloud",
+      "b) Install-Module -Name EpiCloud -Scope CurrentUser",
+      "c) Get-Help Start-EpiDeployment -Full",
+      "d) Connect-EpiCloud -ClientKey <ClientKey> -ClientSecret <ClientSecret> -ProjectId <ProjectId>",
+    ],
+    answer: "b) Install-Module -Name EpiCloud -Scope CurrentUser",
+  },
+  {
+    question:
+      "Which cmdlet is used to fetch information about ongoing or finished deployments?",
+    options: [
+      "a) Start-EpiDeployment",
+      "b) Get-EpiDeploymentPackageLocation",
+      "c) Get-EpiDeployment",
+      "d) Add-EpiDeploymentPackage",
+    ],
+    answer: "c) Get-EpiDeployment",
+  },
+  {
+    question:
+      "What should you run to see additional logging information while using cmdlets?",
+    options: [
+      "a) -DirectDeploy",
+      "b) -Verbose",
+      "c) -ZeroDowntimeMode",
+      "d) -IncludeBlob",
+    ],
+    answer: "b) -Verbose",
+  },
+  {
+    question: "Which cmdlet is used to start a database export?",
+    options: [
+      "a) Start-EpiDatabaseExport",
+      "b) Get-EpiDatabaseExport",
+      "c) Complete-EpiDeployment",
+      "d) Connect-EpiCloud",
+    ],
+    answer: "a) Start-EpiDatabaseExport",
+  },
+  {
+    question:
+      "What does the -IncludeBlob option do when used with the Start-EpiDeployment cmdlet?",
+    options: [
+      "a) Copies the DB from source to target environment",
+      "b) Copies BLOBs from source to target environment",
+      "c) Validates the reset progress before completing reset",
+      "d) Enables a maintenance page during deployment",
+    ],
+    answer: "b) Copies BLOBs from source to target environment",
+  },
+  {
+    question:
+      "When would you use the -UseMaintenancePage parameter for deployment?",
+    options: [
+      "a) To enable Zero Downtime Deployment.",
+      "b) To validate the reset progress before completing reset",
+      "c) To speed up deployments by deploying directly to the target Web App",
+      "d) To enable a maintenance page during the deployment if there are DB changes",
+    ],
+    answer:
+      "d) To enable a maintenance page during the deployment if there are DB changes",
+  },
+  {
+    question:
+      "What is the primary purpose of the RollbackDatabase option when resetting a deployment?",
+    options: [
+      "a) To perform a swap during deployment",
+      "b) To specify the wait parameter",
+      "c) To enable a maintenance page during the deployment",
+      "d) To restore the database if the UseMaintenancePage parameter was used for deployment",
+    ],
+    answer:
+      "d) To restore the database if the UseMaintenancePage parameter was used for deployment",
+  },
+  {
+    question:
+      "Which cmdlets have a -Wait switch if you want the cmdlets to return after the action has finished?",
+    options: [
+      "a) Start-EpiDatabaseExport and Get-EpiDeployment",
+      "b) Complete-EpiDeployment and Reset-EpiDeployment",
+      "c) Connect-EpiCloud and Import-Module EpiCloud",
+      "d) Get-EpiDeployment and Complete-EpiDeployment",
+    ],
+    answer: "b) Complete-EpiDeployment and Reset-EpiDeployment",
+  },
+  {
+    question: "How can you get the output of a deployment as JSON?",
+    options: [
+      "a) Use Get-EpiDeployment followed by ConvertTo-Json",
+      "b) Use Add-EpiDeploymentPackage followed by ConvertTo-Json",
+      "c) Use Start-EpiDeployment -ShowWindow",
+      "d) Use Start-EpiDatabaseExport -Wait",
+    ],
+    answer: "a) Use Get-EpiDeployment followed by ConvertTo-Json",
+  },
+  {
+    question: "What does the ZeroDowntimeMode option accept as values?",
+    options: [
+      "a) ReadOnly and ReadWrite",
+      "b) InProgress and Completed",
+      "c) Integration and Development",
+      "d) Preproduction and Production",
+    ],
+    answer: "a) ReadOnly and ReadWrite",
+  },
+  {
+    question: "How do I create a new visitor group in Episerver 12?",
+    options: [
+      "a. Navigate to the 'Visitor Groups' tab, click 'Create New,' and follow the wizard",
+      "b. Go to the 'Settings' menu, select 'Visitor Groups,' and click the 'Add New Group' button",
+      "c. Access the 'Marketing' section, choose 'Visitor Groups,' and then click the 'New Group' option",
+      "d. Click the 'Create Visitor Group' link on the homepage",
+    ],
+    answer:
+      "a. Navigate to the 'Visitor Groups' tab, click 'Create New,' and follow the wizard",
+  },
+  {
+    question: "What criteria can I use to define a visitor group?",
+    options: [
+      "a. Criteria for defining a visitor group can include location, device type, user profile properties, and custom rules you set up",
+      "b. You can only define visitor groups based on user demographics",
+      "c. Visitor group criteria are limited to user behavior on your website",
+      "d. Visitor groups can only be based on age and gender",
+    ],
+    answer:
+      "a. Criteria for defining a visitor group can include location, device type, user profile properties, and custom rules you set up",
+  },
+  {
+    question:
+      "Can I create visitor groups based on user behavior, such as page views or clicks?",
+    options: [
+      "a. No, visitor groups can only be created based on demographic information",
+      "b. Yes, you can create visitor groups based on user behavior, including page views, clicks, and other interactions",
+      "c. User behavior is not a valid criterion for defining visitor groups",
+      "d. You can only create visitor groups based on device type",
+    ],
+    answer:
+      "b. Yes, you can create visitor groups based on user behavior, including page views, clicks, and other interactions",
+  },
+  {
+    question: "How can I assign a visitor to a specific visitor group?",
+    options: [
+      "a. Visitors must manually select their visitor group from a dropdown menu",
+      "b. Visitors are automatically assigned to visitor groups when they meet the predefined criteria",
+      "c. You need to send visitors an email to ask them to join a visitor group",
+      "d. Visitors can only be assigned to visitor groups by the website administrator",
+    ],
+    answer:
+      "b. Visitors are automatically assigned to visitor groups when they meet the predefined criteria",
+  },
+  {
+    question:
+      "Is it possible to set up time-based visitor groups that expire after a certain date?",
+    options: [
+      "a. No, visitor groups cannot have time-based settings",
+      "b. Yes, you can establish time-based visitor groups with start and end dates, ensuring they expire when needed",
+      "c. Time-based visitor groups are limited to specific hours of the day",
+      "d. Time-based visitor groups can only be set up for the next 24 hours",
+    ],
+    answer:
+      "b. Yes, you can establish time-based visitor groups with start and end dates, ensuring they expire when needed",
+  },
+  {
+    question:
+      "What is the process for editing or deleting an existing visitor group?",
+    options: [
+      "a. Editing or deleting an existing visitor group is not possible",
+      "b. To edit or delete an existing visitor group, go to the 'Visitor Groups' section, select the group, and choose the appropriate action from the menu",
+      "c. You can only edit visitor groups, but not delete them",
+      "d. Contact Episerver support to edit or delete visitor groups",
+    ],
+    answer:
+      "b. To edit or delete an existing visitor group, go to the 'Visitor Groups' section, select the group, and choose the appropriate action from the menu",
+  },
+  {
+    question:
+      "What is the purpose of using visitor groups in Episerver 12, and how can they benefit the website user experience?",
+    options: [
+      "a. To create aesthetic website designs",
+      "b. To personalize content and tailor experiences",
+      "c. To improve website security",
+      "d. To increase website load times",
+    ],
+    answer: "b. To personalize content and tailor experiences",
+  },
+  {
+    question:
+      "Can you provide examples of practical use cases for visitor groups in e-commerce and marketing on an Episerver website?",
+    options: [
+      "a. Organizing website events",
+      "b. Tracking website analytics",
+      "c. Targeting specific user segments with personalized content",
+      "d. Managing website hosting servers",
+    ],
+    answer: "c. Targeting specific user segments with personalized content",
+  },
+  {
+    question:
+      "How do visitor groups in Episerver 12 differ from earlier versions of the platform, and what advantages does the latest version offer?",
+    options: [
+      "a. They are no different from earlier versions",
+      "b. They offer improved performance and security",
+      "c. They provide fewer customization options",
+      "d. They are not compatible with older browsers",
+    ],
+    answer: "b. They offer improved performance and security",
+  },
+  {
+    question:
+      "What is the basic process for creating and configuring a dynamic webpage that adapts based on the visitor's visitor group in Episerver 12?",
+    options: [
+      "a. Delete the existing webpage and start from scratch",
+      "b. Use a pre-made template with no customization",
+      "c. Configure personalized content based on visitor group criteria",
+      "d. Ignore visitor groups and use a static webpage",
+    ],
+    answer: "c. Configure personalized content based on visitor group criteria",
+  },
+  {
+    question:
+      "Can you explain how you would use visitor groups to target different offers to visitors based on their geographic location?",
+    options: [
+      "a. By creating separate websites for each location",
+      "b. By using personalized content blocks tied to visitor group criteria",
+      "c. By displaying offers randomly to all visitors",
+      "d. By disabling offers for all visitors",
+    ],
+    answer:
+      "b. By using personalized content blocks tied to visitor group criteria",
+  },
+  {
+    question:
+      "What types of user data are collected to create and optimize visitor groups, and how can this information be effectively utilized?",
+    options: [
+      "a. No user data is collected for visitor groups",
+      "b. User data may include IP addresses, email addresses, and phone numbers",
+      "c. User data may include demographics, behavior, and custom properties",
+      "d. User data is collected but cannot be used effectively",
+    ],
+    answer:
+      "c. User data may include demographics, behavior, and custom properties",
+  },
+  {
+    question:
+      "Are there any best practices for managing and maintaining visitor groups over time to ensure their relevance and effectiveness?",
+    options: [
+      "a. There are no best practices for visitor group management",
+      "b. Regularly review and update visitor group criteria",
+      "c. Delete all visitor groups periodically",
+      "d. Ignore visitor groups once they are set up",
+    ],
+    answer: "b. Regularly review and update visitor group criteria",
+  },
+  {
+    question:
+      "How does Episerver address privacy concerns and GDPR compliance when using visitor groups?",
+    options: [
+      "a. Episerver does not address GDPR compliance",
+      "b. Episerver provides tools to handle privacy and GDPR compliance",
+      "c. GDPR compliance is solely the responsibility of website visitors",
+      "d. GDPR compliance is not relevant to visitor groups",
+    ],
+    answer: "b. Episerver provides tools to handle privacy and GDPR compliance",
+  },
+  {
+    question:
+      "How does the use of visitor groups impact the performance and server resources of an Episerver website, and what actions can be taken to optimize performance?",
+    options: [
+      "a. Visitor groups have no impact on website performance",
+      "b. They can increase server load and impact performance",
+      "c. Visitor groups always improve website performance",
+      "d. Performance optimization is not possible",
+    ],
+    answer: "b. They can increase server load and impact performance",
+  },
+  {
+    question:
+      "What options and features are available for measuring and analyzing the results of visitor groups in Episerver 12 and using insights to enhance website performance and user experience?",
+    options: [
+      "a. There are no measurement or analysis options for visitor groups",
+      "b. Analytics tools provide data on visitor group performance",
+      "c. All analytics features are disabled when using visitor groups",
+      "d. Insights from visitor groups cannot be used to improve the user experience",
+    ],
+    answer: "b. Analytics tools provide data on visitor group performance",
+  },
 ];
 
 let currentQuestion = 0;
