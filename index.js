@@ -14,7 +14,7 @@ const questions = [
     options: ["a) 1", "b) 2", "c) 3", "d) 4"],
     answer: "c) 3",
   },
-  /*
+
   {
     question: "What is the function of Cloudflare Caching in DXP?",
     options: [
@@ -862,7 +862,7 @@ const questions = [
     ],
     answer: "b. Analytics tools provide data on visitor group performance",
   },
-  */
+
 ];
 
 let currentQuestion = 0;
