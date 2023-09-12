@@ -867,12 +867,11 @@ const questions = [
 
 let currentQuestion = 0;
 let score = 0;
-
+document.getElementById("countQ").innerText= questions.length
 function loadQuestion(index) {
   const question = questions[index];
   const questionElement = document.getElementById("question");
   const optionsList = document.getElementById("options");
-
   questionElement.textContent = `${index + 1}. ${question.question}`;
   optionsList.innerHTML = "";
 
