@@ -262,7 +262,7 @@ const questions = [
   {
     question: "How often are transaction logs backed up in DXP?",
     options: ["a) Hourly", "b) Every 5 minutes", "c) Daily", "d) Weekly"],
-    answer: "a) Hourly",
+    answer: "b) Every 5 minutes",
   },
   {
     question: "What is the primary purpose of the Deployment API in DXP?",
