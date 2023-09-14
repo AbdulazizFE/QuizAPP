@@ -862,7 +862,97 @@ const questions = [
     ],
     answer: "b. Analytics tools provide data on visitor group performance",
   },
-
+  {
+    question: "How long is content cached when read from a scheduled job?",
+    options: [
+      "a) 1 minute",
+      "b) 3 minutes",
+      "c) 5 minutes",
+      "d) 10 minutes",
+    ],
+    answer: "a) 1 minute",
+  },
+  {
+    question: "How long is Find results cached?",
+    options: [
+      "a) Not at all",
+      "b) 30 minutes",
+      "c) 1 hour",
+      "d) 2 hours",
+    ],
+    answer: "b) 30 minutes",
+  },
+  {
+    question: "Where is content from EpiForms saved?",
+    options: [
+      "a) Cache",
+      "b) Database",
+      "c) DDS",
+      "d) File system",
+    ],
+    answer: "c) DDS",
+  },
+  {
+    question:
+      "How can you enable the use of <script> tags in TinyMCE? Which configuration setting should you use?",
+    options: [
+      "A) config.AddSetting('extended_valid_elements', 'script')",
+      "B) config.EnableTags('script')",
+      "C) config.AllowScriptTags(true)",
+      "D) config.RestrictTags('script')",
+    ],
+    answer: "A) config.AddSetting('extended_valid_elements', 'script')",
+  },
+  {
+    question: "How do you create a menu option?",
+    options: [
+      "a) Inherit from an interface",
+      "b) Use an attribute on actions",
+      "c) Both a and b",
+      "d) None of the above",
+    ],
+    answer: "c) Both a and b",
+  },
+  {
+    question: "What can you do with the PowerShell tool for DXP deployment?",
+    options: [
+      "a) Deploy code",
+      "b) Deploy database",
+      "c) Deploy blob content",
+      "d) All of the above",
+    ],
+    answer: "d) All of the above",
+  },
+  {
+    question: "Which environments can you deploy to with the PowerShell tool?",
+    options: [
+      "a) Development, Staging, Production",
+      "b) Preprod, Integration, Prod",
+      "c) Test, UAT, Live",
+      "d) Local, Remote, Cloud",
+    ],
+    answer: "b) Preprod, Integration, Prod",
+  },
+  {
+    question: "How do you obtain API keys for CI/CD?",
+    options: [
+      "a) PaaS portal",
+      "b) Developer console",
+      "c) Command line",
+      "d) Configuration file",
+    ],
+    answer: "a) PaaS portal",
+  },
+  {
+    question: "Which interface is used for caching?",
+    options: [
+      "a) ICacheProvider",
+      "b) IObjectCache",
+      "c) ICacheManager",
+      "d) ISynchronizedObjectInstanceCache",
+    ],
+    answer: "d) ISynchronizedObjectInstanceCache",
+  },
 ];
 
 let currentQuestion = 0;
