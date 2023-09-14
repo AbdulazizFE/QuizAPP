@@ -953,6 +953,66 @@ const questions = [
     ],
     answer: "d) ISynchronizedObjectInstanceCache",
   },
+  {
+    question: "How do you build your own user?",
+    options: [
+      "a) Implement the IUser interface",
+      "b) Inherit from ApplicationUser or IdentityUser",
+      "c) Use an attribute decorator",
+      "d) Call the CreateUser() method",
+    ],
+    answer: "b) Inherit from ApplicationUser or IdentityUser",
+  },
+  {
+    question: "What is the most appropriate method to ensure that a text property has at least 150 characters upon publishing?",
+    options: [
+      "a) Use the [Range] attribute",
+      "b) Use the [Required] attribute",
+      "c) Implement IValidate<T>",
+      "d) Use the [MinLength] attribute",
+    ],
+    answer: "c) Implement IValidate<T>",
+  },
+  {
+    question: "Which framework or library is used for property validation?",
+    options: [
+      "a) Angular.js",
+      "b) Node.js",
+      "c) JavaScript",
+      "d) React.js",
+    ],
+    answer: "c) JavaScript",
+  },
+  {
+    question: "What is not supported by Optimizely as a .NET property?",
+    options: [
+      "a) Decimal",
+      "b) Integer",
+      "c) Double",
+      "d) DateTime",
+    ],
+    answer: "a) Decimal",
+  },
+  {
+    question: "What can be done in the 'Convert Pages' section in Admin?",
+    options: [
+      "a) Convert pages to HTML",
+      "b) Convert images to different formats",
+      "c) Convert pages and possibly properties",
+      "d) Convert languages in content",
+    ],
+    answer: "c) Convert pages and possibly properties",
+  },
+  {
+    question: "Which role is required to log in to CMS?",
+    options: [
+      "a) CmsAdmins",
+      "b) CmsEditors",
+      "c) CmsAuthors",
+      "d) CmsViewers",
+    ],
+    answer: "a) CmsAdmins",
+  },
 ];
 
 let currentQuestion = 0;
