@@ -1013,6 +1013,18 @@ const questions = [
     ],
     answer: "a) CmsAdmins",
   },
+
+  {
+    question:"How many validation steps can be used max for content approval?",
+    options:[
+      "a) 1",
+      "b) 5",
+      "c) 10",
+      "d) Unlimited",
+
+    ],
+    answer:"d) Unlimited"
+  }
 ];
 
 let currentQuestion = 0;
