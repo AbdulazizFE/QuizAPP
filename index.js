@@ -1024,6 +1024,17 @@ const questions = [
 
     ],
     answer:"d) Unlimited"
+  },
+
+  {
+    question: "Which framework/library is used when validating properties?",
+    options:[
+      "a) Angular.js",
+      "b) JavaScript",
+      "c) Node.js",
+      "d) React.js"
+    ],
+    answer:"b) JavaScript"
   }
 ];
 
