@@ -864,32 +864,17 @@ const questions = [
   },
   {
     question: "How long is content cached when read from a scheduled job?",
-    options: [
-      "a) 1 minute",
-      "b) 3 minutes",
-      "c) 5 minutes",
-      "d) 10 minutes",
-    ],
+    options: ["a) 1 minute", "b) 3 minutes", "c) 5 minutes", "d) 10 minutes"],
     answer: "a) 1 minute",
   },
   {
     question: "How long is Find results cached?",
-    options: [
-      "a) Not at all",
-      "b) 30 minutes",
-      "c) 1 hour",
-      "d) 2 hours",
-    ],
+    options: ["a) Not at all", "b) 30 minutes", "c) 1 hour", "d) 2 hours"],
     answer: "b) 30 minutes",
   },
   {
     question: "Where is content from EpiForms saved?",
-    options: [
-      "a) Cache",
-      "b) Database",
-      "c) DDS",
-      "d) File system",
-    ],
+    options: ["a) Cache", "b) Database", "c) DDS", "d) File system"],
     answer: "c) DDS",
   },
   {
@@ -964,7 +949,8 @@ const questions = [
     answer: "b) Inherit from ApplicationUser or IdentityUser",
   },
   {
-    question: "What is the most appropriate method to ensure that a text property has at least 150 characters upon publishing?",
+    question:
+      "What is the most appropriate method to ensure that a text property has at least 150 characters upon publishing?",
     options: [
       "a) Use the [Range] attribute",
       "b) Use the [Required] attribute",
@@ -975,22 +961,12 @@ const questions = [
   },
   {
     question: "Which framework or library is used for property validation?",
-    options: [
-      "a) Angular.js",
-      "b) Node.js",
-      "c) JavaScript",
-      "d) React.js",
-    ],
+    options: ["a) Angular.js", "b) Node.js", "c) JavaScript", "d) React.js"],
     answer: "c) JavaScript",
   },
   {
     question: "What is not supported by Optimizely as a .NET property?",
-    options: [
-      "a) Decimal",
-      "b) Integer",
-      "c) Double",
-      "d) DateTime",
-    ],
+    options: ["a) Decimal", "b) Integer", "c) Double", "d) DateTime"],
     answer: "a) Decimal",
   },
   {
@@ -1015,32 +991,142 @@ const questions = [
   },
 
   {
-    question:"How many validation steps can be used max for content approval?",
-    options:[
-      "a) 1",
-      "b) 5",
-      "c) 10",
-      "d) Unlimited",
-
-    ],
-    answer:"d) Unlimited"
+    question: "How many validation steps can be used max for content approval?",
+    options: ["a) 1", "b) 5", "c) 10", "d) Unlimited"],
+    answer: "d) Unlimited",
   },
 
   {
     question: "Which framework/library is used when validating properties?",
-    options:[
-      "a) Angular.js",
-      "b) JavaScript",
-      "c) Node.js",
-      "d) React.js"
+    options: ["a) Angular.js", "b) JavaScript", "c) Node.js", "d) React.js"],
+    answer: "b) JavaScript",
+  },
+
+  {
+    question:
+      "What is the purpose of adding a reference to EPiServer.Framework.dll when creating an initialization module?",
+    options: [
+      "a) To ensure multi-threaded execution",
+      "b) To integrate with the Optimizely platform",
+      "c) To track the initialization state of the module",
+      "d) To reset the application between test runs",
     ],
-    answer:"b) JavaScript"
-  }
+    answer: "b) To integrate with the Optimizely platform",
+  },
+
+  {
+    question:
+      "Which method is used to set up a property with a default implementation in the initialization module?",
+    options: [
+      "a) Initialize",
+      "b) Uninitialize",
+      "c) Suggest Edits",
+      "d) EPiServer.Framework.dll",
+    ],
+    answer: "a) Initialize",
+  },
+
+  {
+    question:
+      "In what order should you undo actions performed in the Initialize method?",
+    options: [
+      "a) In the same order as Initialize",
+      "b) In the reverse order of Initialize",
+      "c) In random order",
+      "d) In the order of Uninitialize",
+    ],
+    answer: "b) In the reverse order of Initialize",
+  },
+
+  {
+    question:
+      "When does the initialization engine ensure that your code executes in a single-threaded manner?",
+    options: [
+      "a) During Uninitialize",
+      "b) When dealing with shared state",
+      "c) When using custom code",
+      "d) When executing through the initialization system",
+    ],
+    answer: "d) When executing through the initialization system",
+  },
+
+  {
+    question:
+      "What should you add as a module dependency if you are using the Optimizely Content Management System (CMS) API?",
+    options: [
+      "a) EPiServer.Framework.dll",
+      "b) [InitializableModule]",
+      "c) EPiServer.Web.InitializationModule",
+      "d) Suggest Edits",
+    ],
+    answer: "c) EPiServer.Web.InitializationModule",
+  },
+
+  {
+    question:
+      "What is the main purpose of the initialization module described in the text?",
+    options: [
+      "a) To create an integration with EPiServer.Framework.dll",
+      "b) To execute code in a multi-threaded manner",
+      "c) To work with the initialization system in the Optimizely platform",
+      "d) To reset the application state for integration tests",
+    ],
+    answer:
+      "c) To work with the initialization system in the Optimizely platform",
+  },
+
+  {
+    question:
+      "According to the text, which module should you specify as a dependency when using the Optimizely Content Management System (CMS) API?",
+    options: [
+      "a) [InitializableModule]",
+      "b) EPiServer.Framework.dll",
+      "c) EPiServer.Web.InitializationModule",
+      "d) EPiServer.ContentManagementSystemModule",
+    ],
+    answer: "c) EPiServer.Web.InitializationModule",
+  },
+
+  {
+    question:
+      "What is the recommended approach for handling multi-threading issues when dealing with shared state in an initialization module?",
+    options: [
+      "a) Lock regions explicitly",
+      "b) Use the Uninitialize method",
+      "c) Ensure custom code is used",
+      "d) Rely on the initialization engine for synchronization",
+    ],
+    answer: "a) Lock regions explicitly",
+  },
+
+  {
+    question:
+      "What is the purpose of the Uninitialize method in the initialization module?",
+    options: [
+      "a) To track the initialization state",
+      "b) To set up default property implementations",
+      "c) To undo actions performed in Initialize in reverse order",
+      "d) To create integration tests for the Optimizely platform",
+    ],
+    answer: "c) To undo actions performed in Initialize in reverse order",
+  },
+
+  {
+    question:
+      "Why is it important to undo actions performed in the Initialize method in the reverse order during Uninitialize?",
+    options: [
+      "a) It improves code performance",
+      "b) It maintains the integrity of the application state",
+      "c) It ensures multi-threaded execution",
+      "d) It aligns with best practices for integration testing",
+    ],
+    answer: "b) It maintains the integrity of the application state",
+  },
 ];
 
 let currentQuestion = 0;
 let score = 0;
-document.getElementById("countQ").innerText= questions.length
+document.getElementById("countQ").innerText = questions.length;
 function loadQuestion(index) {
   const question = questions[index];
   const questionElement = document.getElementById("question");
@@ -1087,7 +1173,6 @@ function checkAnswer() {
   }
 }
 function displayResult() {
-
   const resultElement = document.getElementById("result");
   resultElement.innerHTML = ""; // Clear any previous content
   const scoreResult = document.createElement("p");
@@ -1102,7 +1187,6 @@ function displayResult() {
     const selectedOptionIndex = parseInt(selectedOptionInput.value);
     const userAnswer = question.options[selectedOptionIndex];
     const correctAnswer = question.answer;
-
 
     const isCorrect = userAnswer === correctAnswer;
     questionResult.className = "row row-cols-1 row-cols-md-1 g-4";
@@ -1123,7 +1207,6 @@ function displayResult() {
     resultElement.appendChild(questionResult);
   });
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
   loadQuestion(currentQuestion);
